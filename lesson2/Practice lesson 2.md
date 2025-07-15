@@ -3,6 +3,8 @@
 Dưới đây là danh sách các bài tập nhỏ ứng với từng phần kiến thức cơ bản trong Java. Cuối cùng là một bài tập tổng hợp để ôn lại toàn bộ.
 
 ---
+## Yêu cầu
+Làm hết tất cả các bài bên dưới **trừ bài 6** (tự chọn, có thể tìm hiểu và làm trước).
 
 ## 1. Nhập, Xuất, Kiểu Dữ liệu
 
@@ -26,7 +28,7 @@ Tên: [Tên] - Tuổi: [Tuổi] - Lớp: [Lớp] - GPA: [Điểm trung bình]
 
 ## 3. Phép toán và Toán tử
 
-**Bài tập:** Viết chương trình nhập 2 số nguyên và thực hiện các phép toán: cộng, trừ, nhân, chia, chia lấy dư. Sau đó kiểm tra xem 2 số đó có bằng nhau không.
+**Bài tập:** Viết chương trình nhập 2 số nguyên và thực hiện các phép toán: cộng, trừ, nhân, chia, chia lấy dư. Sau đó kiểm tra xem 2 số đó có bằng nhau không sau đó in ra màn hình.(kiểm tra tối thiểu là 5 cặp)
 
 ---
 
