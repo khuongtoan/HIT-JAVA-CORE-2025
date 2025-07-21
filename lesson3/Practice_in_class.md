@@ -38,17 +38,20 @@
 
 ---
 
-### Bài 3: Xử lý chuỗi và điều kiện
-
+### Bài 3: Kiểm tra đối xứng chuỗi (Palindrome)
 **Yêu cầu:**
 
-* Nhập một chuỗi câu.
-* Kiểm tra xem chuỗi có bắt đầu bằng "Hello" và kết thúc bằng dấu chấm "!" hay không.
-* Đếm số từ trong chuỗi và in từ dài nhất.
-* Thay thế tất cả chữ `a/A` thành `@`.
+* Viết chương trình thực hiện các thao tác sau:
+* Nhập vào một chuỗi từ bàn phím.
+* Xoá các khoảng trắng ở đầu và cuối chuỗi.
+* Kiểm tra xem chuỗi có phải là palindrome (chuỗi đối xứng) hay không.
+
+Ví dụ: "madam", "RaceCar" là đối xứng.
+
+In chuỗi đảo ngược.
 
 ```java
-// Dùng String methods, split, for, if
+// Dùng equalseIgnoreCase, for 
 ```
 
 ---

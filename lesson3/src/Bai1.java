@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 public class Bai1 {
+    /*
+        mảng.
+        Đếm và in ra:
+        Tổng các số chẵn.
+        Tổng các số lẻ.
+        Số lượng số nguyên tố trong mảng.
+    */
+
     public static boolean isPrime(int n) {
         if (n < 2) return false;
         for (int i = 2; i <= Math.sqrt(n); i++)

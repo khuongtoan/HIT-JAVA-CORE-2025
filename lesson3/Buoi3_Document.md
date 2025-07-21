@@ -91,10 +91,10 @@ double exp = Math.exp(value);
 ```java
 double randomValue = Math.random(); // [0, 1)
 ```
-
 ## 4. Lớp String trong Java
 
-### Tạo và nối chuỗi
+**Tạo và nối chuỗi**
+
 ```java
 String firstName = "John";
 String lastName = "Doe";
@@ -102,7 +102,8 @@ String fullName = firstName + " " + lastName;
 String fullNameConcat = firstName.concat(" ").concat(lastName);
 ```
 
-### So sánh chuỗi
+**So sánh chuỗi**
+
 ```java
 String str1 = "Hello";
 String str2 = "World";
@@ -110,29 +111,85 @@ boolean areEqual = str1.equals(str2); // false
 boolean ignoreCase = str1.equalsIgnoreCase("HELLO"); // true
 ```
 
-### Trích xuất và tìm kiếm chuỗi
+**Trích xuất và tìm kiếm chuỗi**
+
 ```java
 String sentence = "Java programming is fun and powerful.";
 String sub = sentence.substring(5, 15); // "programming"
 int index = sentence.indexOf("fun"); // 21
 ```
 
-### Thay thế và chuyển đổi
+**Thay thế và chuyển đổi**
+
 ```java
-String text1 = "I like apples and apples are tasty.";
+String text = "I like apples and apples are tasty.";
 String text2 = text.replace("apples", "bananas");
 String text3 = text.toUpperCase();
 String text4 = text.toLowerCase();
 ```
 
-### Kiểm tra chuỗi
+**Kiểm tra chuỗi**
+
 ```java
-String text1 = "Hello, Java programming.";
-boolean text2 = msg.startsWith("Hello"); // true
-boolean text3 = msg.endsWith("programming."); // false
-boolean text4 = msg.contains("Java"); // true
+String msg = "Hello, Java programming.";
+boolean starts = msg.startsWith("Hello"); // true
+boolean ends = msg.endsWith("programming."); // true
+boolean contains = msg.contains("Java"); // true
 ```
 
+**Cắt bỏ khoảng trắng ở hai đầu**
+
+```java
+String name = "   John   ";
+String trimmedName = name.trim(); // "John"
+```
+
+**So sánh theo thứ tự từ điển**
+
+```java
+String a = "Apple";
+String b = "Banana";
+int result = a.compareTo(b); // < 0
+```
+
+**Tách chuỗi**
+
+```java
+String fruits = "apple,banana,orange";
+String[] arr = fruits.split(",");
+```
+
+**Chuyển số <-> chuỗi**
+
+```java
+int number = 123;
+String str = String.valueOf(number); // "123"
+
+String s = "456";
+int n = Integer.parseInt(s); // 456
+```
+
+**Lấy ký tự tại vị trí bất kỳ**
+
+```
+String s = "Hello";
+char c = s.charAt(1); // e
+```
+### Bảng tổng hợp phương thức String
+
+| Phép xử lý       | Phương thức                                |
+|------------------|--------------------------------------------|
+| Nối chuỗi        | `+`, `concat()`                            |
+| So sánh          | `equals()`, `equalsIgnoreCase()`           |
+| Tìm vị trí       | `indexOf()`, `lastIndexOf()`               |
+| Trích xuất       | `substring(start, end)`                    |
+| Thay thế         | `replace(old, new)`                        |
+| Viết hoa/thường  | `toUpperCase()`, `toLowerCase()`           |
+| Xóa khoảng trắng | `trim()`                                   |
+| Tách chuỗi       | `split(String regex)`                      |
+| Kiểm tra chuỗi   | `startsWith()`, `endsWith()`, `contains()` |
+| So sánh thứ tự   | `compareTo()`                              |
+| Lấy ký tự        | `charAt()`                                 |
 ## 📌 Ghi nhớ
 
 - `final`: tạo ra hằng số không thay đổi.

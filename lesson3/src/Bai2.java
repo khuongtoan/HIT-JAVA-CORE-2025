@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 public class Bai2 {
+
+    /*
+        Chu vi và diện tích hình tròn.
+        `r` mũ `k`.
+        Căn bậc hai của `(r + k)`.
+        Giá trị tuyệt đối của `(r - k)`.
+     */
+
     public static final double PI = 3.14;
 
     public static double chuVi(double r) {

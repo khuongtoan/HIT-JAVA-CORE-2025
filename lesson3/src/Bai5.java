@@ -1,19 +1,31 @@
 import java.util.Scanner;
 
 public class Bai5 {
+    /*
+        Nhập `n` và tạo ma trận `n x n` xoắn ốc tăng dần từ `1`.
+        In ma trận.
+        Tính và in tổng các phần tử trên 2 đường chéo chính và phụ.
+    */
 
     public static int[][] genMatrix(int n) {
+
         int[][] matrix = new int[n][n];
-        int value = 1, top = 0, bottom = n - 1, left = 0, right = n - 1;
+
+        int value = 1, top = 0, bottom = n - 1;
+        int left = 0, right = n - 1;
 
         while (value <= n * n) {
-            for (int i = left; i <= right; i++) matrix[top][i] = value++;
+            for (int i = left; i <= right; i++)
+                matrix[top][i] = value++;
             top++;
-            for (int i = top; i <= bottom; i++) matrix[i][right] = value++;
+            for (int i = top; i <= bottom; i++)
+                matrix[i][right] = value++;
             right--;
-            for (int i = right; i >= left; i--) matrix[bottom][i] = value++;
+            for (int i = right; i >= left; i--)
+                matrix[bottom][i] = value++;
             bottom--;
-            for (int i = bottom; i >= top; i--) matrix[i][left] = value++;
+            for (int i = bottom; i >= top; i--)
+                matrix[i][left] = value++;
             left++;
         }
 

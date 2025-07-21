@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class Bai4 {
 
+    /*
+        In dãy Fibonacci từ `0` đến `n`.
+        Tính tổng các số Fibonacci lẻ trong dãy.
+     */
+
     public static int fibonacci(int n) {
         if (n <= 1) return n;
         return fibonacci(n - 1) + fibonacci(n - 2);
