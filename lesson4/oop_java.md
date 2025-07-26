@@ -2,7 +2,21 @@
 
 ## 1. Giới thiệu về OOP trong Java
 
-Lập trình hướng đối tượng (Object-Oriented Programming - OOP) là mô hình lập trình dựa trên việc xây dựng các **đối tượng (object)** tương tác với nhau. Java là ngôn ngữ thuần OOP, giúp tổ chức mã rõ ràng, dễ bảo trì và tái sử dụng.
+Lập trình hướng đối tượng (Object-Oriented Programming - OOP) 
+là mô hình lập trình dựa trên việc xây dựng các **đối tượng 
+(object)** tương tác với nhau. Java là ngôn ngữ thuần OOP, 
+giúp tổ chức mã rõ ràng, dễ bảo trì và tái sử dụng.
+ Tập trung vào các thực thể giống như trong thực tế hơn. VD: nhà cửa, xe cộ, …
+
+
+- Đối tượng (Object): bao gồm 2 thông tin: thuộc tính và phương thức.
+
+* Thuộc tính (attribute): là các biến được sử dụng để lưu trữ những thông tin, đặc điểm của đối tượng. Họ tên, tuổi, địa chỉ, …
+* Phương thức (method): chính là các hàm được sử dụng để thực hiện các hành động của đối tượng đó. Ăn, ngủ, đi chơi, …
+
+- Lớp (Class): là nơi định nghĩa các thông tin trên của đối tượng, có thể hiểu như là kiểu dữ liệu do chúng ta tự định nghĩa
+
+![alt text](https://4.bp.blogspot.com/-YDN3HuXGY1g/WUpxo02n6iI/AAAAAAAAAE0/-5hQn9VZVL4s9bYhyyobfcFZKWxxIIEzACLcBGAs/s1600/cars.jpg)
 
 ---
 
@@ -89,6 +103,7 @@ public class Example {
     int d; // default
 }
 ```
+- Thông thường nên để phạm vi truy cập của thuộc tính là private và các method là public 
 
 ---
 
@@ -108,6 +123,12 @@ public class Example {
       }
   }
   ```
+- Lưu ý:
+
+* Hàm tạo phải có tên trùng tên class và để phạm vi truy cập public
+* Hàm tạo sẽ được tự động gọi đến khi khởi tạo đối tượng qua từ khóa 'new'
+* Có thể có nhiều hàm tạo
+* Nếu không có hàm tạo thì chương trình sẽ tự động tạo ra hàm tạo không tham số
 
 ---
 
