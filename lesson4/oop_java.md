@@ -1,5 +1,14 @@
 # OOP Trong Java - Cơ Bản và Tổng Quan
 
+## Tổng quan về các phương pháp lập trình 
+- Lập trình hướng thủ tục (Procedural Programming)
+- Lập trình hướng đối tượng (Object-Oriented Programming – OOP)
+- Lập trình hàm (Functional Programming)
+- Lập trình hướng sự kiện (Event-driven Programming)
+- Lập trình logic (Logic Programming)
+- Lập trình hướng dữ liệu / khai báo (Data-oriented / Declarative)
+- Lập trình hướng mô-đun (Modular Programming)
+
 ## 1. Giới thiệu về OOP trong Java
 
 Lập trình hướng đối tượng (Object-Oriented Programming - OOP) 
