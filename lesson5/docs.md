@@ -1,10 +1,22 @@
 ﻿# Buổi 5
 
+## 🔑 4 tính chất quan trọng của OOP (Lập trình hướng đối tượng)
+1. Kế thừa (Inheritance)
+Là khả năng một lớp có thể kế thừa các thuộc tính và phương thức từ lớp khác. Giúp tái sử dụng mã và mở rộng chức năng của lớp mà không cần viết lại mã từ đầu.
+
+2. Đóng gói (Encapsulation)
+Là việc ẩn dữ liệu và chỉ cho phép truy cập thông qua các phương thức được cung cấp (getter, setter). Điều này giúp bảo vệ dữ liệu và kiểm soát quyền truy cập.
+
+3. Đa hình (Polymorphism)
+Là khả năng một đối tượng có thể có nhiều hình thức khác nhau. Trong Java, điều này thường thể hiện qua việc override hoặc overload phương thức.
+
+4. Trừu tượng (Abstraction)
+Là khả năng ẩn đi chi tiết triển khai và chỉ hiển thị những gì cần thiết. Trong Java, tính trừu tượng được thể hiện qua abstract class hoặc interface.
 ## 1. Static và final
 
 - Static: Trong Java, từ khóa "static" được sử dụng để khai báo một thành phần (biến hoặc phương thức) thuộc về lớp chứ không thuộc về các thể hiện cụ thể của lớp đó. Điều này có nghĩa là khi một biến hoặc phương thức được khai báo là static, chúng có thể được truy cập thông qua tên lớp mà không cần tạo ra một thể hiện của lớp đó.
 
-- Final: Khi một biến được khai báo là "final", giá trị của biến đó không thể thay đổi sau khi đã được gán một lần. Điều này có nghĩa là biến final chỉ có thể được gán giá trị một lần và sau đó không thể thay đổi nữa.
+- Final: Khi một biến được khai báo là "final", giá trị của biến đó không thể thay đổi sau khi đã được gán khi khởi tạo. Điều này có nghĩa là biến final chỉ có thể được gán giá trị một lần và sau đó không thể thay đổi nữa.
 
 
 ```java
