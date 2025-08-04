@@ -138,21 +138,22 @@ public class Main {
 
 ```
 
-## 5. Mảng đối tượng
 
-- Mảng đối tượng trong java cho phép khởi tạo và lưu trữ 1 danh sáhc gồm nhiều đối tượng của 1 lớp.
+## 5. Mảng đối tượng và ArrayList
 
+### 5.1 Mảng đối tượng trong Java
 
-``` java
+* Mảng đối tượng cho phép lưu trữ nhiều đối tượng của cùng một lớp.
+* Tuy nhiên, kích thước mảng là cố định và không thể thay đổi sau khi khởi tạo.
 
-
+```java
 public class Student {
     private String name;
-    
+
     public Student(String name) {
         this.name = name;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -164,21 +165,68 @@ public class School {
         students[0] = new Student("Alice");
         students[1] = new Student("Bob");
         students[2] = new Student("Charlie");
-        
+
         for (Student student : students) {
             System.out.println("Student name: " + student.getName());
         }
     }
 }
-
-
 ```
 
+---
 
+### 5.2 Sử dụng ArrayList<Student> thay vì mảng
 
+* `ArrayList` là một cấu trúc linh hoạt, có thể tự động thay đổi kích thước.
+* Dễ dàng thao tác thêm, sửa, xóa phần tử.
 
+```java
+import java.util.ArrayList;
 
+public class School {
+    public static void main(String[] args) {
+        ArrayList<Student> studentList = new ArrayList<>();
 
+        // ✅ Thêm sinh viên
+        studentList.add(new Student("Alice"));
+        studentList.add(new Student("Bob"));
+        studentList.add(new Student("Charlie"));
+
+        // ✅ In danh sách sinh viên
+        for (Student student : studentList) {
+            System.out.println("Student name: " + student.getName());
+        }
+
+        // ✅ Sửa tên sinh viên thứ 2 (Bob → Bobby)
+        studentList.set(1, new Student("Bobby"));
+
+        // ✅ Xóa sinh viên đầu tiên (Alice)
+        studentList.remove(0);
+
+        // ✅ In lại danh sách sau khi sửa và xóa
+        System.out.println("\nDanh sách sau khi cập nhật:");
+        for (Student student : studentList) {
+            System.out.println("Student name: " + student.getName());
+        }
+    }
+}
+```
+
+---
+
+### 5.3 Một số phương thức phổ biến của ArrayList
+
+| Phương thức                 | Ý nghĩa                              |
+| --------------------------- | ------------------------------------ |
+| `add(Student s)`            | Thêm phần tử vào cuối danh sách      |
+| `get(int index)`            | Lấy phần tử tại vị trí index         |
+| `set(int index, Student s)` | Gán lại phần tử tại vị trí index     |
+| `remove(int index)`         | Xóa phần tử tại vị trí index         |
+| `size()`                    | Lấy số lượng phần tử trong danh sách |
+
+---
+
+📌 **Gợi ý:** Nếu bạn cần thao tác linh hoạt, nên ưu tiên sử dụng `ArrayList<Student>` thay vì `Student[]`.
 
 
 

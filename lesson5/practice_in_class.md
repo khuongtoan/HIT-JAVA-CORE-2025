@@ -27,7 +27,7 @@
 #### Thuộc tính:
 
 * `String cageCode` – mã lồng
-* `Pet[] pets` – mảng các thú trong lồng
+* `ArrayList<Pet> pets` – mảng các thú trong lồng
 * `int currentPetCount` – số thú hiện tại trong lồng
 * `static int totalCages` – biến đếm số lồng đã tạo
 * `final int MAX_CAPACITY = 3` – số thú tối đa trong một lồng
